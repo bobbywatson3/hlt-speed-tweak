@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import xml.etree.ElementTree as ET
 file_name = "LapTimer-0131-20150326-096540.hlptrz"
 correction_factor = 0.96
