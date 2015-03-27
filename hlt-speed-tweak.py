@@ -6,7 +6,6 @@ parser = ET.XMLParser(encoding="windows-1252")
 tree = ET.parse(file_name, parser=parser)
 root = tree.getroot()
 
-
 for speed in root.findall('.//obd/speed'):
     corrected_speed = float(speed.text) * correction_factor
     speed.text = str(corrected_speed)
