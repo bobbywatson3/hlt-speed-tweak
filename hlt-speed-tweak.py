@@ -37,6 +37,6 @@ else:
         corrected_speed = float(speed.text) * float(args.correction_factor)
         speed.text = str(corrected_speed)
     if not args.output:
-        args.output = 'corrected_speed.hlptrl'
+        args.output = 'corrected_obd_speed.hlptrl'
     tree.write(args.output)
     print "Corrected OBD speed LapTimer file saved to:", os.path.realpath(args.output)
